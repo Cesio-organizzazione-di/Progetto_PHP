@@ -64,16 +64,15 @@
 	.post {
 		text-align:left;
 		position: absolute;
-		left: 35%;
-		width: 30%;
+		left:25%;
+		width:50%;
 	}
 
 	
 	.ogniPost {
-		display:block;
-		padding-left:5%;
+		padding-left: 2%;
 		margin: 5%;
-		overflow: auto;
+		height: 12%;
 		background-color: rgba(255,255,255,0.8);
 		color: dimgray;
 		border-radius: 20px;
@@ -81,20 +80,27 @@
 		border-left:solid;
 		border-width: 2px;
 		border-color: dimgray;
-		font-size: 120%;
-		
+		color: dimgray;
+		font-family: courier new;
 	}
 	
 	.destra{
 		width: 20%;
+		height: 10%;
 		text-align: right;
 		position:fixed;
 		left: 75%;
 		top: 0;
 		
 	}
-	.spostato {
-		width: 330px;
+	
+	.spostato{
+		width: 85%;
+		padding-bottom: 5%;
+		padding-top: 5%;
+		padding-left:2%;
+		word-wrap: break-word;
+		font-family: garamond;
 	}
 	
 	::selection {
@@ -105,8 +111,12 @@
 		border: none;
 		cursor: pointer;
 		background:url(\"cancel.png\") no-repeat;
-		background-size: 20px 20px;
+		background-size: 20px;
 		color: rgba(0,0,0,0);
+		float:right;
+		margin-right: 7%;
+		position:relative;
+		top: -30px;
 	}
 	
 	textarea {
@@ -129,10 +139,6 @@
 		float: left;
 	}
 	
-	td strong {
-		font-size: 120%;
-		color: darkslategray;
-	}
 	
 	.pubblica input, .bottone {
 		

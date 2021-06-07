@@ -39,7 +39,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 			</form>
 		</div>
 		
-		<pre class = "post">
+		<div class = "post">
 			<?php	//creiamo la query per accedere a tutti i post
 				$sql = "SELECT * 
 				FROM $post_table_name
@@ -53,27 +53,24 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 				
 				
 				while($row = mysqli_fetch_array($resultQ)) {
-					$post = "<table class = \"ogniPost\">\n<tbody>\n<tr>\n<td>\n<strong> \n";
+					$post = "<div class = \"ogniPost\">\n<p><strong>\n";
 					if($row['user'] == $_SESSION['userName']) {
-						$post.= $row['user']."\n</strong><hr />\n</td>\n";
-						$post.= "<td><form action = \"elimina_post.php\" method = \"post\">";
-						$post.= "<input class = \"elimina\" type = \"submit\" name = \"eliminando\"";
+						$post.= $row['user']."\n</strong></p><hr />\n";
+						$post.= "<form action = \"elimina_post.php\" method = \"post\">";
+						$post.= "<input class = \"elimina\" type = \"submit\" name = \"eliminando\" ";
 						$post.= "value =" .$row['postId'].">";
-						$post.= "</form>\n</td>\n</tr>\n";
-						$post.= "<tr>\n<td>\n";
-						$post.= "<p class = \"spostato\">".$row['testo']."</p>\n";						
+						$post.= "</form>\n";						
 					}
 					else {
-						$post.= $row['user']."\n</strong><hr />\n</td>\n</tr>\n";
-						$post.= "<tr>\n<td>\n";
-						$post.= "<p class = \"spostato\">".$row['testo']."</p>\n";
+						$post.= $row['user']."\n</strong><hr />\n";
 					}
-					$post.= "</td>\n</tr>\n</tbody>\n";
-					$post.= "</table>\n";
+					
+					$post.= "<div class = \"spostato\">".$row['testo']."</div>\n";
+					$post.= "</div>\n";
 					echo $post;
 				}
 			?>
-		</pre>	
+		</div>	
 		
 		<div class = "destra">
 			<h3> Il tuo profilo </h3>
