@@ -85,9 +85,10 @@ $stileInterno="<style rel=\"stylesheet\" type=\"text/css\">\n
 	}\n
 	
 	.wrap{
+		display:block;
 		width: 90%;
 		padding-bottom: 5%;
-		padding-top:2%;
+		padding-top:5%;
 		padding-left: 2%;
 		word-wrap: break-word;
 		font-family: garamond;
@@ -112,6 +113,7 @@ $stileInterno="<style rel=\"stylesheet\" type=\"text/css\">\n
 		height: 1px;
 		border: 0;
 		background-color: teal;
+		margin-right: 100%;
 	}
 	
 	.destra{\n

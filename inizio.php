@@ -54,13 +54,13 @@
 				}
 				
 				while($row = mysqli_fetch_array($resultQ)){
-					$post = "<div class=\"ogniPost\">\n<strong><p>";
+					$post = "<div class=\"ogniPost\">\n<p><strong>";
 					if($row['user'] == $_SESSION['userName']){
 						$post .= $row['user'];
 						$post .= "\n</strong></p><hr /><form action=\"elimina_post.php\" method=\"post\"><input class=\"elimina\" type=\"submit\" name=\"eliminando\" value=".$row['postId']." /></form>\n";
 					}else{
 						$post .= $row['user'];
-						$post .= "\n</strong><hr />\n";
+						$post .= "\n</strong></p><hr />\n";
 					}
 					$post .= "\n<div class=\"wrap\">\n";
 					$post .= $row['testo']."</div></div>";
