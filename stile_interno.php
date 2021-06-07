@@ -1,213 +1,202 @@
 <?php
-	$stileInterno = "<style type = \"text/css\">
+$stileInterno="<style rel=\"stylesheet\" type=\"text/css\">\n
+	h3{\n
+		color: #0B2E41;\n
+		font-family: verdana;\n
+	}\n
 	
-	body {
-		background-image: url(\"sfondo.jpg\");
-		background-attachment: fixed;
-		text-align:center;
-	}
-	
-	h1 {
-		font-family: garamond;
-		font-size: 300%;
-		margin-top: 0px;
-		color: #0B2E41;
-	}
-	
-	h3 {
+	h2{
 		color: #0B2E41;
 		font-family: verdana;
 	}
 	
-	h2 {
-		color: #0B2E41;
-		font-family: verdana;
-		
-	}
+	th{\n
+		color: #0B2E41;\n
+	}\n
 	
-	th {
-		color:#0B2E41;
-	}
+	h1{\n
+		font-family: garamond;\n
+		font-size: 300%;\n
+		margin-top: 0px;\n
+		color: #0B2E41;\n
+	}\n
 	
-	.menu {
-			position: fixed;
-			font-size: 130%;
-			left: 5%;
-			top: 7%;
-	}
+	em{\n
+		color: maroon;\n
+	}\n
 	
-	.menu a {
-		text-decoration: none;
-		color: dimgray;
-	}
+	body{\n
+		background-image: url(\"sfondo.jpg\");\n
+		text-align: center;
+		background-size: 1920px 1240px;
+		background-attachment:fixed;
+	}\n
 	
-	.menu a:hover {
-		color: black;
-	}	
+	.menu{\n
+		position: fixed;\n
+		font-size: 130%;\n
+		left: 5%;\n
+		top: 7%;\n
+	}\n
 	
-	ul {
-	list-style-type: none;
-	font-family: verdana;
-	text-align: left;
-	}
+	.menu a{\n
+		text-decoration: none;\n
+		color: dimGray;\n
+	}\n
 	
-	li {
-	padding: 10px;
-	}
+	.menu a:hover{\n
+		color: black;\n
+	}\n
 	
-	li img {
-		width: 20px;
-		height:20px;
-	}
-
+	li{\n
+		padding: 10px;\n
+		font-family: Verdana\n
+	}\n
 	
-	.post {
-		text-align:left;
-		position: absolute;
-		left:25%;
-		width:50%;
-	}
-
+	li img{\n
+		width: 20px;\n
+		height: 20px;\n
+	}\n
 	
-	.ogniPost {
-		padding-left: 2%;
+	ul{\n
+		list-style-type: none;\n
+		text-align: left;\n
+	}\n
+	
+	.post{\n
+		position: absolute;\n
+		left: 25%;\n
+		text-align: left;\n
+		width: 50%;
+	}\n
+	
+	.ogniPost{\n
+		background-color: rgba(255, 255, 255, 0.8);\n
 		margin: 5%;
-		height: 12%;
-		background-color: rgba(255,255,255,0.8);
-		color: dimgray;
+		padding-left: 2%;
 		border-radius: 20px;
 		border-top: solid;
-		border-left:solid;
+		border-left: solid;
 		border-width: 2px;
-		border-color: dimgray;
-		color: dimgray;
+		border-color: dimGray;
+		color:dimGray;
+		height: 12%;
 		font-family: courier new;
-	}
+	}\n
 	
-	.destra{
-		width: 20%;
-		height: 10%;
-		text-align: right;
-		position:fixed;
-		left: 75%;
-		top: 0;
-		
-	}
-	
-	.spostato{
-		width: 85%;
+	.wrap{
+		width: 90%;
 		padding-bottom: 5%;
-		padding-top: 5%;
-		padding-left:2%;
+		padding-top:2%;
+		padding-left: 2%;
 		word-wrap: break-word;
 		font-family: garamond;
 	}
 	
-	::selection {
-		color: yellow;
-	}
 	
-	.elimina {
-		border: none;
-		cursor: pointer;
-		background:url(\"cancel.png\") no-repeat;
+	.elimina{
+		background: url(\"cancel.png\") no-repeat center;
 		background-size: 20px;
+		cursor: pointer;
+		border: none;
+		z-index: 98;
 		color: rgba(0,0,0,0);
-		float:right;
-		margin-right: 7%;
-		position:relative;
+		margin-left: 20%;
 		top: -30px;
+		position: relative;
 	}
 	
-	textarea {
-		width: 30%;
-		padding: 10px;
-		padding-bottom: 30px;
-		font-family: garamond;
-		border:none;
-	}
-	
-	textarea:focus {
-		outline:none;
-	}
-	
-	hr {
+	hr{
+		width:70%;
+		float:left;
 		height: 1px;
 		border: 0;
 		background-color: teal;
-		width: 70%;
-		float: left;
 	}
 	
+	.destra{\n
+		position: fixed;\n
+		left: 75%;\n
+		top: 0;\n
+		text-align: right;\n
+		width: 20%;
+	}\n
 	
-	.pubblica input, .bottone {
-		
-		margin: 10px;
+	::selection{
+		color: yellow;
+	}
+	
+	textarea{
+		padding:10px;
+		font-family: garamond;
+		width:30%;
+		padding-bottom: 30px;
+		font-size:120%;
+		border:none;
+	}
+	
+	textarea:focus{
+		outline:none;
+	}
+	
+	.pubblica input, .bottone{
 		border-radius: 20px;\n
-		height : 35px;\n
-		width: 200px;\n
+		height: 35px;\n
 		border-style: none;\n
-		padding-left: 10px;	
-		background-color: white;
-		
-	}
-	
-	.pubblica input:hover , .bottone:hover{
-		background-color: gainsboro;
-	}
-		
-	
-	.carrello {
-		font-size: 120%;
-		margin-left:32%;
-		text-align: left;
-		margin-top: 5%;
-		margin-bottom: 3%;	
-	}
-	
-	.prodotti {
+		width: 200px;\n
+		padding-left: 10px;\n
+		background-color:white;
+		text-align:center;
 		margin: 10px;
-		background-color: rgba(255,255,255,0.8);
+	}
+	
+	.pubblica input:hover, .bottone:hover{
+		background-color:gainsboro;
+	}
+	
+	.carrello{
+		margin-left: 32%;
+		text-align: left;
+		margin-top:5%;
+		margin-bottom: 3%;
+		font-size: 120%;
+	}
+	
+	.prodotti{
+		margin: 10px;
+		background-color: rgba(255, 255, 255, 0.8);\n
 		border-radius: 10px;
-		width: 80%;
 		border-top: solid;
-		border-left:solid;
+		border-left: solid;
 		border-width: 2px;
-		border-color: dimgray;
-		color: dimgray;
+		border-color: dimGray;
+		color:dimgray;
+		width: 80%;
 		font-family: garamond;
 	}
 	
-	.prezzi {
+	.prezzi{
 		float: right;
 		margin-right: 2%;
 		color: darkslategray;
 		font-weight: bold;
 	}
 	
-	em {\n
-		color: maroon;\n
-	}\n
-	
-	.lista {
+	.lista{
 		margin: 10px;
-		background-color: rgba(173,216,230,1);
+		background-color: rgba(173, 216, 230, 1);\n
 		border-radius: 10px;
-		width: 80%;
 		border-top: solid;
-		border-left:solid;
+		border-left: solid;
 		border-width: 2px;
-		border-color: dimgray;
-		color: white;
-		font-family: garamond;
+		border-color: dimGray;
+		color:royalblue;
 		width: 50%;
+		font-family: garamond;
 	}
 	
-	.centro {
+	.centro{
 		margin-top: 10%;
 	}
-	
-	
-	</style>
-	";
+</style>"
 ?>
