@@ -85,8 +85,7 @@ $stileInterno="<style rel=\"stylesheet\" type=\"text/css\">\n
 	}\n
 	
 	.wrap{
-		display:block;
-		width: 90%;
+		width: 85%;
 		padding-bottom: 5%;
 		padding-top:5%;
 		padding-left: 2%;
@@ -100,9 +99,9 @@ $stileInterno="<style rel=\"stylesheet\" type=\"text/css\">\n
 		background-size: 20px;
 		cursor: pointer;
 		border: none;
-		z-index: 98;
 		color: rgba(0,0,0,0);
-		margin-left: 20%;
+		float: right;
+		margin-right: 7%;
 		top: -30px;
 		position: relative;
 	}
@@ -113,7 +112,6 @@ $stileInterno="<style rel=\"stylesheet\" type=\"text/css\">\n
 		height: 1px;
 		border: 0;
 		background-color: teal;
-		margin-right: 100%;
 	}
 	
 	.destra{\n
